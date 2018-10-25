@@ -41,6 +41,6 @@ ZSH_THEME_GIT_PROMPT_SHA_AFTER="%{$WHITE%}]"
 
 PROMPT='%{$GREEN_BOLD%}%n@%m%{$WHITE%}: ';
 PROMPT+='%{$BLUE%}%~%u %{$RESET_COLOR%}';
-PROMPT+='%{$WHITE_BOLD%}$(_get_k8s_context) %{$RESET_COLOR%}';
+PROMPT+='%{$RED_BOLD%}$(_get_k8s_context) %{$RESET_COLOR%}';
 PROMPT+='%{$GREEN_BOLD%}$(git_current_branch)$(git_prompt_short_sha)$(git_prompt_status) %{$RESET_COLOR%}
 %{$BLUE%}>%{$RESET_COLOR%} '
