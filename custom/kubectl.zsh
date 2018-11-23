@@ -7,5 +7,5 @@ function _get_k8s_context() {
     fi
 
     context="$(kubectl config current-context 2>/dev/null)"
-    echo "($context)"
+    [ -z "$context" ] && echo "" || echo "($context)"
 }
